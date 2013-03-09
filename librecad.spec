@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_datadir}/{mime/packages,%{name}},%{_libdir},%{_mandir}/man1,%{_pixmapsdir}}
 
 install unix/{%{name},ttf2lff} $RPM_BUILD_ROOT%{_bindir}
-ln -s ../..%{_libdir}/%{name} $RPM_BUILD_ROOT%{_datadir}/%{name}/plugins
+ln -s %{_libdir}/%{name} $RPM_BUILD_ROOT%{_datadir}/%{name}/plugins
 cp -r unix/resources/plugins $RPM_BUILD_ROOT%{_libdir}/%{name}
 cp -r unix/resources/{doc,qm} $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a librecad/support/{fonts,library,patterns} $RPM_BUILD_ROOT%{_datadir}/%{name}
