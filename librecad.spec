@@ -14,11 +14,13 @@ BuildRequires:	QtSql-devel
 BuildRequires:	QtSvg-devel
 BuildRequires:	QtXml-devel
 BuildRequires:	boost-devel
+BuildRequires:	freetype-devel
 BuildRequires:	muparser-devel
 BuildRequires:	qt4-assistant
 BuildRequires:	qt4-build
 BuildRequires:	qt4-linguist
 BuildRequires:	qt4-qmake
+Requires:	QtCore >= 4.8.0
 Requires:	shared-mime-info
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
