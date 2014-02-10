@@ -1,11 +1,11 @@
 Summary:	Generic 2D CAD program
 Name:		librecad
-Version:	2.0.0
-Release:	0.beta2
+Version:	2.0.2
+Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
-Source0:	https://github.com/LibreCAD/LibreCAD/archive/%{version}beta2.tar.gz
-# Source0-md5:	3bbcb39b5b65d75377f7f882ed834284
+Source0:	https://github.com/LibreCAD/LibreCAD/archive/%{version}.tar.gz
+# Source0-md5:	0081a4028780d8a610c9f0aab8ac4eb6
 URL:		http://www.librecad.org/
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
@@ -29,7 +29,7 @@ LibreCAD is a Qt4 application to design 2D CAD drawing based on the
 community edition of QCad.
 
 %prep
-%setup -q -n LibreCAD-%{version}beta2
+%setup -q -n LibreCAD-%{version}
 %{__sed} -e 's|imgs/LibreCADicon|img/librecadlogo|' -i librecad/support/doc/LibreCADdoc.qhcp
 :> librecad/support/doc/about.txt
 %{__sed} -e 's|lrelease|lrelease-qt4|' -i scripts/postprocess-unix.sh
