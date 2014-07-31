@@ -1,11 +1,11 @@
 Summary:	Generic 2D CAD program
 Name:		librecad
-Version:	2.0.2
+Version:	2.0.4
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	https://github.com/LibreCAD/LibreCAD/archive/%{version}.tar.gz
-# Source0-md5:	0081a4028780d8a610c9f0aab8ac4eb6
+# Source0-md5:	1feedc76e882aee8668de9bd92a56a54
 URL:		http://www.librecad.org/
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
