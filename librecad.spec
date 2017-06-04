@@ -1,11 +1,11 @@
 Summary:	Generic 2D CAD program
 Name:		librecad
-Version:	2.0.8
+Version:	2.1.3
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	https://github.com/LibreCAD/LibreCAD/archive/%{version}.tar.gz
-# Source0-md5:	b8dc5383c299ef31481ef4db76958225
+# Source0-md5:	cef168e90e247c4a20ec81dd9686110e
 URL:		http://www.librecad.org/
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
@@ -46,7 +46,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_datadir}/{mime/packages,
 install unix/{%{name},ttf2lff} $RPM_BUILD_ROOT%{_bindir}
 ln -s %{_libdir}/%{name} $RPM_BUILD_ROOT%{_datadir}/%{name}/plugins
 cp -r unix/resources/plugins $RPM_BUILD_ROOT%{_libdir}/%{name}
-cp -r unix/resources/{doc,qm} $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -r unix/resources/qm $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a librecad/support/{fonts,library,patterns} $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a desktop/%{name}.1 tools/ttf2lff/ttf2lff.1 $RPM_BUILD_ROOT%{_mandir}/man1
 cp -a desktop/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}
